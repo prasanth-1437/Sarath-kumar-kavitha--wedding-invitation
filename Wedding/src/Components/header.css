@@ -1,0 +1,8 @@
+button{
+    padding-top: 7px;
+    text-align: center;
+    border-radius: 8px;
+    height: 40px;
+    border: 2px solid orange;
+    color: violet;
+}

@@ -1,0 +1,317 @@
+/* HomePage.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(135deg, rgba(255, 254, 254, 0.6), rgba(235, 232, 232, 0.4)), url('./welcome.jpg') no-repeat center center fixed; */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(10, 10, 10, 0.4)), url('./welcome.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff200;
+    overflow-x: hidden;
+  }
+  .toggled-class {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(252, 252, 252, 0.6), rgba(255, 255, 255, 0.4)), url('./welcome.jpg') no-repeat center center fixed;
+    background-color: #f0f0f0;
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden; 
+  }
+a{
+  text-decoration: none;
+}
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #f4b400;
+    transform: scale(1.1);
+  }
+  
+  .hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(254, 254, 254, 0.);
+    animation: slideIn 2s ease-out;
+  }
+  
+  .hero-section h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeIn 2s ease-out;
+  }
+  .hero-names{
+    padding: 15px;
+    
+    border: 3px dashed #e6ee02;
+    border-radius: 20px;
+  }
+  .hero-namesD{
+    padding: 15px;
+    border: 3px dashed #333333;
+   
+    border-radius: 20px;
+  }
+  .invitation-details, .countdown, .location,.solemnized ,.contact{
+    padding: 40px;
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+    background: rgba(6, 6, 6, 0.9);
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .invitation-detailsD, .countdownD, .locationD,.solemnizedD,.contactD {
+    padding: 40px;
+    color: #333; 
+    text-align: center;
+    animation: fadeInUp 1.5s ease-out;
+    background: rgba(252, 252, 252, 0.9);
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .invitation-details h2, .invitation-details h3, .invitation-details h4 {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+ #headings{
+  font-size: 1.65em;
+ }
+  #couple{
+    width: 70%;
+    height: 65%;
+    border-radius: 5%;
+  }
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .time-unit {
+    font-size: 2em;
+    margin: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .time-unit:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .map {
+    margin: 20px auto;
+  }
+  
+  .map iframe {
+    border: 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .map iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  .footer {
+    display: none;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2em;
+    }
+  
+    .invitation-details h2, .invitation-details h3, .invitation-details h4 {
+      font-size: 1.2em;
+    }
+  
+    .timer {
+      flex-direction: column;
+    }
+  
+    .time-unit {
+      font-size: 1.5em;
+    }
+    .footer {
+      
+      display: block;
+      
+      height:45px;
+      
+      justify-content: center;
+      background: rgba(255, 255, 255, 1);
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      animation: fadeIn 2s ease-out;
+    }
+    
+    .navbar{
+      display: none;
+    }
+    #Navbar-down{
+      width: 95%;
+      padding: 0px 10px;
+      display: flex;
+      align-items: center;
+     
+      justify-content: space-between;
+    }
+    .each-option{
+     
+    
+    }
+    .btm-name{
+      height: 20px;
+   
+      
+    }
+    .btm-name p{
+      font-size: 0.55em;
+      color: blue;
+    }
+    #couple{
+      width: 100%;
+      height: 100%;
+      border-radius: 5%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar a {
+      font-size: 16px;
+    }
+  
+    .hero-section h1 {
+      font-size: 1.5em;
+    }
+  
+    .invitation-details h2, .invitation-details h3, .invitation-details h4 {
+      font-size: 1em;
+    }
+  
+    .timer {
+      font-size: 1em;
+    }
+  
+    .time-unit {
+      font-size: 1em;
+      padding: 10px;
+    }
+    .footer {
+   
+      display: block;
+      text-align: center;
+     
+      background: rgba(255, 255, 255, 1);
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      animation: fadeIn 2s ease-out;
+    }
+    .navbar{
+      display: none;
+    }
+    #Navbar-down{
+      width: 95%;
+      padding: 0px 10px;
+      display: flex;
+      align-items: center;
+     
+      justify-content: space-between;
+    }
+    .each-option{
+     
+    
+    }
+    .btm-name{
+      height: 20px;
+   
+      
+    }
+    .btm-name p{
+      font-size: 0.55em;
+      color: blue;
+    }
+    #couple{
+      width: 100%;
+      height: 100%;
+      border-radius: 5%;
+    }
+  }
+  
